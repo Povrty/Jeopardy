@@ -33,10 +33,11 @@ let categories = [
  *      Answer: https://bit.ly/3gOwrga
  */
 function renderCategories() {
-  for (const element of categories) {
-    console.log(element);
-    /*$("div").append(element);*/
+  let htmlString = "";
+  for (let i = 0; i < categories.length; i++) {
+    let categoryStr = "<div class='category'><div class='category-cell'>" + categories[i].toUpperCase() + "</div></div>";
+    htmlString = htmlString + categoryStr;
   }
+$("#categories").append(htmlString);
 }
 
-renderCategories();
