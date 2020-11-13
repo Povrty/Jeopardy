@@ -39,11 +39,12 @@ let questionValues = [100, 200, 300, 400, 500];
  *      Need more help? Check out https://bit.ly/2EIsD3b or ask a volunteer.
  */
 function renderQuestions() {
-    let htmlString = "";
     for (let i = 0; i < numCategories; i++) {
+        let htmlString = "<div class='questions-column'>";
         for (let j = 0; j < questionValues.length; j++) {
-            let questionStr = "<div class='questions-column'><div class='question-cell'>" + questionValues[j] + "</div></div>";
+            htmlString = htmlString + "<div class='question-cell'" + i + "'>$" + questionValues[j] + "</div>";
         }
+        htmlString += "</div>"
+        $("#questions").append(htmlString);
     }
-    $("#questions").append(htmlString);
 }
