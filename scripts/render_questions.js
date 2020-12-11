@@ -42,7 +42,7 @@ function renderQuestions() {
     for (let i = 0; i < numCategories; i++) {
         let htmlString = "<div class='questions-column'>";
         for (let j = 0; j < questionValues.length; j++) {
-            htmlString = htmlString + "<div class='question-cell'" + i + "'>$" + questionValues[j] + "</div>";
+            htmlString = htmlString + "<div class='question-cell' data-category =" + i + ">$" + questionValues[j] + "</div>";
         }
         htmlString += "</div>"
         $("#questions").append(htmlString);

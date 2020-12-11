@@ -16,7 +16,8 @@
  */
 
 function renderScoringButtons() {
-    // Add code here
+    $("#score").show();
+    getCurrentScore();
 }
 
 /* TODO: Program the following:
@@ -38,9 +39,14 @@ function renderScoringButtons() {
  *      HINT: Compute the new score and then call the helper function.
 */
 function subtractFromScore() {
-    // Add code here
-}
+    $("#incorrect-button").click(() => {
+
+    });
+};
 
 function addToScore() {
-    // Add code here
-}
+    $("#correct-button").click(() => {
+        let currentScore = getCurrentScore();
+        let newScore = currentScore + currentQuestionValue;
+    });
+};
