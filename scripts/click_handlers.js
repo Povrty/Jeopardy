@@ -58,6 +58,7 @@ function questionOnClick(categoryIndex, moneyValue) {
     categories[categoryIndex] + " - $" + moneyValue
   );
   $("#question-modal-text").html(question.question_text);
+  $("#scoring-actions").show();
   $("#question-modal-show-answer")
     .click(() => {
       answerOnClick(categoryIndex, moneyValue);

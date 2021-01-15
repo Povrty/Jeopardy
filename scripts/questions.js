@@ -114,26 +114,26 @@ let questions_by_category = [{
         }
     },
     {
-        category: "Painfully obvious",
+        category: "The Better Chris's",
         100: {
-            question_text: "SHE'S THE PRINCESS IN THE CLASSIC RPG THE LEGEND OF ZELDA",
-            answer_text: "Who is Zelda?",
+            question_text: "WHICH ACTOR PLAYS THOR?",
+            answer_text: "Who is Chris Hemsworth?",
         },
         200: {
-            question_text: "BUNGIE'S WORKING TITLE FOR MARATHON WAS MARATHON, BUT ONI'S WORKING TITLE WAS THIS",
-            answer_text: "What is Oni?"
+            question_text: "WHICH ACTOR PLAYED OWEN GRADY IN JURASSIC WORLD?",
+            answer_text: "Who is Chris Pratt?"
         },
         300: {
-            question_text: "THIS TWO-BUTTON FIGHTING GAME STARS TWO GUYS NAMED KICK AND DIVE",
-            answer_text: "What is Divekick?"
+            question_text: "HE WAS A SNL CAST MEMBER IN THE 1990S.", 
+            answer_text: "Who is Chris Rock?"
         },
         400: {
-            question_text: "BRODERBUND'S CASTLE WOLFENSTEIN WAS AN INSPIRATION FOR THIS 1992 FIRST-PERSON SHOOTER FROM ID SOFTWARE",
-            answer_text: "What is Wolfenstein 3D?"
+            question_text: "HE WAS THE SCIENTIST IN BACK TO THE FUTURE.",
+            answer_text: "Who is Christopher Lloyd?"
         },
         500: {
-            question_text: "THIS VIDEO GAME CHARACTER IS BLUE, COLLECTS RINGS, AND GOES FAST",
-            answer_text: "What is Sonic?"
+            question_text: "HE PLAYED SUPERMAN IN 1978's SUPERMAN FILM.",
+            answer_text: "Who is Christopher Reeve?"
         }
     }
 ];

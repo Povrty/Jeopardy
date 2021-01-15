@@ -4,7 +4,7 @@ let categories = [
   "Famous first words",
   "Going 'dark'",
   "Fictional companies",
-  "Painfully obvious"
+  "The Better Chris's"
 ];
 
 /* TODO: Program the following:

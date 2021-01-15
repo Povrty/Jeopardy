@@ -17,9 +17,16 @@
 
 function renderScoringButtons() {
   $("#score").show();
-  $("#incorrect-button").show();
-  $("#correct-button").show();
+  $("#scoring-actions").show();
+  console.log("Buttons are rendered!");
 
+  $("#correct-button").click(() => {
+    addToScore(currentQuestionValue);
+  });
+
+  $("#incorrect-button").click(() => {
+    subtractFromScore(currentQuestionValue);
+  });
 }
 
 /* TODO: Program the following:
@@ -28,6 +35,7 @@ function renderScoringButtons() {
  * 1. Get the current score using getCurrentScore().
  *
  * 2. Compute the new score by adding or subtracting `currentQuestionValue`.
+ *      Answer: https://bit.ly/3gOwrga
  *
  * 3. Update the game with the new score.
  *      HINT: The score is in the '#current-score' span.
@@ -42,20 +50,22 @@ function renderScoringButtons() {
  */
 
 function getCurrentScore() {
-  let currentScore = 
+  console.log("Getting score..");
+  let currentScore = $("#current-score").val();
+  console.log(currentScore);
+  return currentScore;
 }
 
 function subtractFromScore(currentQuestionValue) {
-
-  $("#incorrect-button").click(() => {
+    console.log("Fetching score..");
     let currentScore = getCurrentScore();
-    let newScore = currentScore - currentQuestionValue;
-  });
+    let newScore = currentScore + currentQuestionValue;
+    $("#current-score").text("$" + newScore);
 }
 
 function addToScore(currentQuestionValue) {
-  $("#correct-button").click(() => {
+    console.log("Fetching score..");
     let currentScore = getCurrentScore();
     let newScore = currentScore + currentQuestionValue;
-  });
+    $("#current-score").text("$" + newScore);
 }
